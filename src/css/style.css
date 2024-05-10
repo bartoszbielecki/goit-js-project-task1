@@ -1,2 +1,7 @@
 @charset "UTF-8";
 @import url('./partials/header.css');
+
+:root {
+  --font-family: 'Roboto', sans-serif;
+  --color-red: #ff001b;
+}
