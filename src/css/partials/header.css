@@ -144,6 +144,9 @@ ul#nav-menu li a {
   border-bottom: 0.5px #ffffff solid;
   border-radius: 0;
   font-size: 1em;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .search-form input::placeholder {
