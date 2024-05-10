@@ -7,3 +7,7 @@
   --color-orange: #ff6b01;
   --color-white: #fff;
 }
+
+* {
+  font-family: var(--font-family);
+}
