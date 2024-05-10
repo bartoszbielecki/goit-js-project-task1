@@ -204,6 +204,10 @@ ul#nav-menu li a {
   border-radius: 5px;
   width: 148px;
   height: 42px;
+  background: unset;
+  border: 1px var(--color-white) solid;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .library-btn {
@@ -213,18 +217,15 @@ ul#nav-menu li a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.library-btn-active,
-.library-btn:hover {
+.btns-container button.library-btn-active,
+.watch-btn:hover,
+.queue-btn:hover {
   background: var(--color-orange);
   box-shadow: 0 8px 43px 0 rgba(255, 107, 1, 0.6);
   border: 1px var(--color-orange) solid;
+  cursor: pointer;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.library-btn:hover,
-.library-btn-active:hover {
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
