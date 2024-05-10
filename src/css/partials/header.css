@@ -64,6 +64,17 @@ ul#nav-menu {
   text-transform: uppercase;
 }
 
+ul#nav-menu li {
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ul#nav-menu li:hover {
+  transform: translateY(-2px);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 ul#nav-menu li a {
   font-weight: 500;
   font-size: 12px;
@@ -215,13 +226,22 @@ ul#nav-menu li a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btns-container button.library-btn-active,
+.btns-container button.library-btn-active {
+  background: var(--color-orange);
+  box-shadow: 0 8px 43px 0 rgba(255, 107, 1, 0.6);
+  border: 1px var(--color-orange) solid;
+  cursor: pointer;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .watch-btn:hover,
 .queue-btn:hover {
   background: var(--color-orange);
   box-shadow: 0 8px 43px 0 rgba(255, 107, 1, 0.6);
   border: 1px var(--color-orange) solid;
   cursor: pointer;
+  transform: translateY(-2px);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
