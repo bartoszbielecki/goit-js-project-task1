@@ -44,7 +44,7 @@ nav {
   display: flex;
   gap: 10px;
   align-items: center;
-  color: #fff;
+  color: var(--color-white);
   text-decoration: none;
   font-family: var(--font-family);
   font-weight: 500;
@@ -71,7 +71,7 @@ ul#nav-menu li a {
   font-size: 12px;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: var(--color-white);
   text-decoration: none;
 }
 
@@ -139,9 +139,9 @@ ul#nav-menu li a {
   padding: 0 0 5px;
   margin-right: 10px;
   background-color: unset;
-  color: #fff;
+  color: var(--color-white);
   border: none;
-  border-bottom: 0.5px #ffffff solid;
+  border-bottom: 0.5px var(--color-white) solid;
   border-radius: 0;
   font-size: 1em;
   font-family: var(--font-family);
@@ -153,7 +153,7 @@ ul#nav-menu li a {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .search-form button {
@@ -174,7 +174,7 @@ ul#nav-menu li a {
   font-weight: 400;
   font-size: 14px;
   text-align: center;
-  color: #ff001b;
+  color: var(--color-red);
   position: absolute;
   margin: 0;
   top: 45px;
@@ -200,7 +200,7 @@ ul#nav-menu li a {
   line-height: 133%;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: var(--color-white);
   border-radius: 5px;
   width: 148px;
   height: 42px;
@@ -208,16 +208,16 @@ ul#nav-menu li a {
 
 .library-btn {
   background: unset;
-  border: 1px #ffffff solid;
+  border: 1px var(--color-white) solid;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .library-btn-active,
 .library-btn:hover {
-  background: #ff6b01;
+  background: var(--color-orange);
   box-shadow: 0 8px 43px 0 rgba(255, 107, 1, 0.6);
-  border: 1px #ff6b01 solid;
+  border: 1px var(--color-orange) solid;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
