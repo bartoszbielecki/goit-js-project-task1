@@ -1,5 +1,5 @@
 header {
-  color: #fff;
+  color: var(--color-white);
   min-height: 216px;
   padding: 40px 32px 0;
   background: url(../../images/header/main-header-bg-desktop.jpg);
