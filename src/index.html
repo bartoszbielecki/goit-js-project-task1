@@ -17,8 +17,34 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="pagination.min.js"></script>
+    <link rel="stylesheet" href="pagination.css" />
   </head>
   <body>
     <include src="./partials/main-header.html"></include>
+    <div id="pagination-demo" class="paginationjs"></div>
+
+    <script>
+      // Inicjalizacja Pagination.js
+      $('#pagination-demo').pagination({
+        dataSource: function (done) {
+          // Symulacja danych z backendu
+          var data = [];
+          for (var i = 1; i <= 100; i++) {
+            data.push(i);
+          }
+          done(data);
+        },
+        pageSize: 10,
+        callback: function (data, pagination) {
+          // Wyrenderowanie danych na stronie
+          var html = '';
+          $.each(data, function (index, item) {
+            html += '<div>' + item + '</div>';
+          });
+          $('#pagination-demo').html(html);
+        },
+      });
+    </script>
   </body>
 </html>
