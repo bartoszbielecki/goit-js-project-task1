@@ -2,9 +2,6 @@ header {
   color: var(--color-white);
   min-height: 216px;
   padding: 40px 32px 0;
-  background: url(../../images/header/main-header-bg-desktop.jpg);
-  background-position: 50% 50%;
-  background-size: cover;
 }
 
 header#main-header {
